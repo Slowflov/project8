@@ -259,7 +259,7 @@ form input, form textarea {
 }
 
 input[type="submit"] {
-	background-color: #BEB45A;
+	background-color: #2f2f11;
 	color: #fff;
 	padding: .5em 1em
 }
@@ -372,9 +372,4 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-}
-
-.footer {
-	background-color: #D8D3A8;
-	text-align: center;
 }

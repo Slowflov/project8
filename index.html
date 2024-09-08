@@ -55,7 +55,7 @@
     <meta name="twitter:image" content="https://www.nina-carducci.fr/assets/images/portfolio-cover.jpg">
 </head>
 	<body>
-		<div class="top-header">
+		<header class="top-header">
 			<h1 class="name">Nina Carducci</h1>
 			<div class="nav">
 				<ul>
@@ -67,7 +67,8 @@
 						<img src="assets/images/instagram.png" alt="Instagram"></a></li>
 				</ul>
 			</div>
-		</div>
+		</header>
+		<main>
 		<section id="header"> <!-- remplacer div par section pour la sélection logique -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -222,16 +223,8 @@
 						alt="Team building event">
 				</div>
 			</div>
-			<div class="quote">
-				<figure>
-					<blockquote>
-						<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
-					</blockquote>
-					<figcaption class="quote__author">- Richard Avedon</figcaption>
-				</figure>
-			</div>
 		</section>
-		<section id="services">  <!-- remplacer div par section pour la sélection logique -->
+		<section id="services">   <!-- remplacer div par section pour la sélection logique -->
 			<h2 class="title">Mes services</h2>
 			<div class="container">
 				<div class="service">
@@ -240,9 +233,10 @@
 						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 					</div>
 					<div class="service__price">
-						<h4>350€/demi journée</h4>
+						<h3>350€/demi journée</h3>
 						<span>Matériel, déplacement inclus</span>
 					</div>
+		
 				</div>
 				<div class="service">
 					<div class="service__description">
@@ -250,34 +244,52 @@
 						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
-						<h4>50€/photo</h4>
-						<span>Prix dégressif en fonction de la quantité</span>
+						<h3>50€/photo</h3>
+						<span>2 AR par photo</span>
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Album photos</h3>
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+					</div>
+					<div class="service__price">
+						<h3>400€ album A4</h3>
+						<span>30 pages recto/verso</span>
 					</div>
 				</div>
 			</div>
 		</section>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
+		</div>
+	</main>
+	<footer>
 		<section id="contact">  <!-- remplacer div par section pour la sélection logique -->
-			<h2 class="title">Me contacter</h2>
 			<div class="container">
-				<h3>Une demande de devis ou une question ?</h3>
-				<p>Je vous invite à m’envoyer un message via ce formulaire.</p>
-				<form>
-					<div class="form-group">
+				<div class="form-container">
+					<h3>Une question ? Une demande de devis ?</h3>
+					<p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures</p>
+					<form action="" method="post">
+						<label for="nom">Nom</label>
+						<input type="text" name="nom" id="nom">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="Votre email">
-					</div>
-					<div class="form-group">
+						<input type="email" name="email" id="email">
 						<label for="message">Message</label>
-						<textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
-					</div>
-					<div class="form-group">
-						<button class="btn" type="submit">Envoyer</button>
-					</div>
-				</form>
-			</div>		  
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						<input type="submit" value="Envoyer"/>
+					</form>
+				</div>
+				<div class="picture right">
+					<img src="./assets/images/camera.webp" alt="Appareil photo" title="Appareil photo haute qualité">
+				</div>
+			</div>
 		</section>
-		<footer class="footer"> <!-- Ajout d'une balise <footer> -->
-			<p>&copy; 2024 Nina Carducci. Tous droits réservés.</p>
-		</footer>
+        </footer>
 	</body>	
 </html>
